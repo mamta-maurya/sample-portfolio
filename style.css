@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Source+Code+Pro:wght@300&display=swap');
+body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+   
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    position: relative;
+    display: flex;
+    flex-direction:row;
+    text-align: center;
+    justify-content: space-around;
+    
+}
+.bg{
+    position: relative;
+
+}
+.bg:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.6;
+        background-image: url('./bg.jpg');
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-size: cover;
+      }
+/* sidebar */
+.sidebar{
+    /* position: sticky; */
+    display: flex;
+    /* overflow-x: hidden; */
+    /* z-index: 2; */
+    flex-direction:column;
+    width: 260px;
+    background-color:#B8405E;
+    margin-left: 30px;
+    color: white;
+    
+}
+.icons{
+    cursor: pointer;
+}
+.ham{
+    margin: 20px 162px 0px 0px;
+    /* visibility: visible; */
+}
+.name{
+    font-size: 21px;
+    font-weight: bold;
+    margin-top: 11px;
+    padding: 2px;
+    font-family: 'Luxurious Roman', cursive;
+font-family: 'Source Code Pro', monospace;
+}
+.role{
+    font-size: 15px;
+}
+.myself{
+    padding-top: 70px;
+    padding-bottom: 34px;
+}
+.navbar{
+display: flex;
+flex-direction: column;
+
+}
+.navbar a li{
+    list-style: none;
+    padding: 10px 0px;
+    border-bottom: 1px solid white;
+
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+.navbar a:hover{
+    color: #B8405E;
+    background-color: white;
+}
+hr{
+width: 100%;
+}
+.img{
+    height: 100px;
+    width: 105px;
+    border-radius: 50%;
+}
+.socialmedia{
+    margin: 30px 0px;
+}
+.socialmedia .fa{
+    color: white;
+    font-size: 15px;
+    padding: 7px;
+}
+.socialmedia a{
+    text-decoration: none;
+    padding: 7px 1px;
+    border-radius: 50%;
+}
+.socialmedia a:hover{
+    background-color: #7c2d40;
+}
+/* main content */
+.main-content{
+    width: 83vw;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    
+}
+/* .page1{
+    display: flex;
+    flex-direction: column;
+    margin: 53px;
+    position: absolute;
+    color: white;
+} */
+h3{
+    font-family: 'Luxurious Roman', cursive;
+font-family: 'Source Code Pro', monospace;
+}
+.intro{
+    font-size: 15px;
+    padding:10px 20px;
+}
+.note img{
+    height: 200px;
+    border-radius: 7px;
+    margin: 5px;
+}
+.note{
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    box-sizing: border-box;
+}
+.note .note-info{
+   
+    padding: 0px 35px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.note-info p{
+    font-size: 15px;
+}
+.btn{
+    padding: 10px;
+    border:none;
+    background-color: white;
+    color: #B8405E;
+    font-size: 17px;
+    font-weight: bold;
+    width: 115px;
+    cursor: pointer;
+}
+.invisible{
+    display: none;
+}
+.visibiltytoggle{
+display: block;
+}
+/* what i am good at */
+.page2{
+    margin: 20px 50px 0px 370px;
+}
+/* .page2 h3{
+    color: white;
+    z-index: 4;
+} */
+/* #page2a{
+    /* overflow-y: scroll; */
+
+*/
+.box{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    box-shadow: rgb(68, 68, 68);
+    margin: 20px 0px;
+    
+}
+.box i{
+    border-radius: 50%;
+    border:1px solid rgb(27, 27, 27);
+    font-size: 25px;
+    padding: 10px;
+}
+.grid{
+    border: 0.5px solid #3a3939;
+    margin: 10px;
+    z-index: 3;
+    padding: 33px;
+    border-radius: 12px;
+    box-shadow: 9px 9px 8px #5a5a5a;
+}
+/* sidebar toggle */
+.sidebartoggle{
+    display: none;
+}
+/* media query */
+@media only screen and (max-width: 1145px) {
+    body {
+      background-color: lightblue;
+    }
+    .note img{
+        /* flex-direction: column; */
+        display: none;
+    }
+    /* .box{
+        grid-template-columns: auto;
+    } */
+  }
+  @media only screen and (max-width: 755px) {
+    body {
+      background-color: rgb(89, 228, 101);
+    }
+  }
+  
